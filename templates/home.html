@@ -1,4 +1,4 @@
-{% comment %} <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>The Movie Cinema</title>
@@ -36,7 +36,7 @@
 <body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
 <div class="body-content">
 	<div class="ml-container" style="display: block;">
-		<a href="https://github.com/kishan0725/The-Movie-Cinema" target="_blank" class="github-corner" title="View source on GitHub">
+		<a href="https://github.com/Pushkar-ingale" target="_blank" class="github-corner" title="View source on GitHub">
 		      <svg data-toggle="tooltip"
 		      data-placement="left" width="80" height="80" viewBox="0 0 250 250"
 			style="fill:#e50914; color:#fff; position: fixed;z-index:100; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -49,7 +49,7 @@
 			  fill="currentColor" class="octo-body"></path>
 		      </svg>
 		    </a>
-    <center><h1 class="app-title">The Movie Cinema</h1></center>
+    <center><h1 class="app-title">Movie Recommandation</h1></center>
     <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
         <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
         <br>
@@ -96,11 +96,9 @@
 	<footer class="footer">
     <br/> 
     <div class="social" style="margin-bottom: 8px">
-    <a class="social-icons" href="https://github.com/kishan0725" target="_blank"><i class="fa fa-github-alt" style="font-size:24px;color: #e4e0e0"></i></a>
-    <a class="social-icons" href="https://linkedin.com/in/kishan0725" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px;color: #e4e0e0"></i></a>
-    <a class="social-icons" href="https://quora.com/profile/Kishan-175" target="_blank"><i class="fa fa-quora" style="font-size:24px;color: #e4e0e0"></i></a>
-    <a class="social-icons" href="https://www.instagram.com/kishan_07_25" target="_blank"><i class="fa fa-instagram" style="font-size:24px;color: #e4e0e0"></i></a>
-    <a class="social-icons" href="https://twitter.com/kishan0725" target="_blank"><i class="fa fa-twitter" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://github.com/Pushkar-ingale" target="_blank"><i class="fa fa-github-alt" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://www.linkedin.com/in/pushkar-ingale" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://www.instagram.com/.mr_pushkar_ingale" target="_blank"><i class="fa fa-instagram" style="font-size:24px;color: #e4e0e0"></i></a>
   </div>
   </footer>
 	</div>
@@ -113,69 +111,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
-</html> {% endcomment %}
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Movie Cinema</title>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body style="font-family: 'Noto Sans JP', sans-serif; background-color: #f8f9fa;">
-
-<div class="container">
-  <h1 class="text-center mt-5">The Movie Cinema</h1>
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-6">
-      <div class="input-group shadow">
-        <input type="text" name="movie" class="form-control movie" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" required>
-        <div class="input-group-append">
-          <button class="btn btn-primary movie-button" type="button" disabled>Enter</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="loader" class="text-center"></div>
-
-<div class="fail">
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-6 text-center">
-        <h3>Sorry! The movie you requested is not in our database. Please check the spelling or try with other movies!</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="footer mt-5">
-  <div class="container text-center">
-    <div class="social mb-4">
-      <a class="social-icons" href="https://github.com/Pushkar-ingale" target="_blank"><i class="fa fa-github-alt"></i></a>
-      <a class="social-icons" href="https://www.linkedin.com/in/pushkar-ingale" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-      <a class="social-icons" href="https://www.instagram.com/.mr_pushkar_ingale" target="_blank"><i class="fa fa-instagram"></i></a>
-    </div>
-  </div>
-</footer>
-
-<!-- Bootstrap and JavaScript libraries -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<!-- Custom JavaScript -->
-<script type="text/javascript" src="{{ url_for('static', filename='autocomplete.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='recommend.js') }}"></script>
-
-</body>
-</html>
+</html> 
